@@ -12,7 +12,7 @@
 @interface GSDropboxDestinationSelectionViewController : UITableViewController
 
 @property (nonatomic, strong) NSString *rootPath;
-@property (nonatomic, weak) id<GSDropboxDestinationSelectionViewControllerDelegate> delegate;
+@property (nonatomic, assign) id<GSDropboxDestinationSelectionViewControllerDelegate> delegate;
 
 @end
 

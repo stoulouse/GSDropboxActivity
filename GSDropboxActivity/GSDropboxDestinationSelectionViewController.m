@@ -124,7 +124,7 @@
         //disable cancel button, as if the user pressed it while we're presenting
         //the loging viewcontroller (async), UIKit crashes with multiple viewcontroller
         //animations
-        self.navigationItem.rightBarButtonItem.enabled = NO;
+        self.navigationItem.rightBarButtonItem.enabled = YES;
         [[DBSession sharedSession] linkFromController:self];
     } else {
         [self.delegate dropboxDestinationSelectionViewControllerDidCancel:self];
